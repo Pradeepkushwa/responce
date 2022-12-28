@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation lading page </title>
+  <link rel="stylesheet" href="logo.css">
+  
+</head>
+
+<body>
+ <header>
+   <nav>
+    <img src= " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBUn5ifjwt19umbX9TBDS9UTxcKN-1fNsRBw&usqp=CAU" width="30" alt="logo">
+    
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYWbxLgUp0jOI1b_g1KpyXRdfHA-EJUKaOw&usqp=CAU" width="80" alt="menu" >
+   </nav>
+     
+   
+  <!--<h2>..Welcome..</h2> -->
+  <h2>.. Enjoy ..</h2>
+  <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_XjuOhg2cNsQVCJjxcx2hNrm06NBMr9f5g&usqp=CAU" id="pic">
+  <h1>GShap <br> Animation</h1>
+ </header>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script>
+  gsap.from('header',{duration:1,x:'-100%'})
+  gsap.from('h2',{duration:1, opacity:0,rotation:90})
+  gsap.from('#pic',{duration:1.5,delay:0.8,y:'-100%',scale:'0',skewY:'1',ease:'power1.owt'})
+  gsap.from('nav',{duration:1, delay:1.5,y:'-100%',scale:'0.5'})
+  gsap.from('h1',{duration:1,delay:2.3,y:'100%',opacity:'0',rotation:'45'})
+ 
+</script>
+
+</body>
+
+</html>
